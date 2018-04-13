@@ -19,7 +19,7 @@ function clean(fileContent, fileExtension, options) {
     fileContent = fileContent.replace(/\s\s+/g, ' ');
   }
 
-  return fileContent.replace(/^\s*[\r\n]/gm, '');
+  return fileContent.replace(/\s*[\r\n]/gm, '');
 }
 
 function removeEmptyLines(options) {
